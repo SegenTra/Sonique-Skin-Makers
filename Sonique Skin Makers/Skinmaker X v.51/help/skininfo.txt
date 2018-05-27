@@ -1,0 +1,15 @@
+[s]
+; leave the empty fields as-is
+version=(Sonique Version, if you're unsure put 1 here)
+author=(Your name)
+title=(The title of your
+url=(The Skin URL)
+url_text=(The URL Text)
+details=(A personalized message to the guys at skins.sonique.com)
+email=(Your private e-mail so we can reach you)
+filesize=(The filesize in bytes)
+dirname=
+filename=
+date=
+catagory=
+description=

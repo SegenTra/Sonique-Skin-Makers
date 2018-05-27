@@ -1,0 +1,162 @@
+SKIN HOW-TO DOCUMENTATION - BETA
+
+----------------------------------------
+:: Introduction
+----------------------------------------
+This document is a basic description of how to make skins for Sonique using Skinmaker.  This is a first draft and probably contains a certain amount of vague and even misleading information.  Whenever you are unsure of how something works, please see the example skin provided.  Usually, by referring to the example skin while your read this document, all should become clear.  DO NOT EMAIL US with questions about how to use Skinmaker or make skins.  We have provided all of the resources that we can with this Skinpack to help you.  We will release updated versions of Skinmaker and documentation as time permits. Additional information such as a FAQ will be added to skins.sonique.com.  Please DO email us if you find any bugs in skinmaker or errors in the documentation.  
+
+Making a skin for Sonique is a fairly lengthy and complex process.  In order to make a really good skin, it will require you to gain a complete understanding of the files described here-in as well as the skinmaker application.  In most cases, creating a good skin will require much tweaking and fiddling in order to get it just right.  The best way to learn how to make a skin is to read this document and refer to both skinmaker and the example skin provided.
+
+
+----------------------------------------
+:: Descriptions
+----------------------------------------
+
+Aside from your graphics, making a skin requires the Skinmaker program and three associated text files.  This Skinmaker program is comprised of two files, Skinmaker.exe and jpeglib.dll.
+
+The three text files are described as follows:
+
+---------------
+:: pathdesc.txt
+---------------
+Location: in the directory with Skinmaker.exe
+Purpose: This file allows you to make the mask information within Skinmaker to be more informative.  With this file, instead of having Skinmaker display "/jpeg/smallknob", you can have it display "JPG::the knob for amp,bal & pitch (color set elsewhere)" - which makes more sense when you are building the skin.  If any more regions are added to the Skinmaker via the skin.dat file (explained below), you can just add them to the pathdesc.txt file too.  You probably won't have to edit this file.
+	
+-----------	
+:: skin.dat
+-----------
+Location: in the directory where the skin files are located.  I have found it useful to keepo a separate directory for all of my skins, each with a different skin.dat file.  Skinmaker creates this file when you make a new skin.
+Purpose: This file contains all of the information that you enter into Skinmaker.  You could actually manually enter all of the data into the skin.dat file, but then you might as well use the brute force method if you want to do that.  If you have any additional regions that need to be entered, putting them in here will cause them to appear in Skinmaker (this would only be useful if in development we decided that we needed another region.  You probably won't have to edit this file.
+
+-----------
+:: skin.ini
+-----------
+Location: in the directory where the skin files are located.  I have found it useful to keepo a separate directory for all of my skins, each with a different skin.dat file.  Skinmaker uses this file to identify the skin.  For example, if you were to load a skin, it would prompt you for a skin.ini file.
+Purpose: This file contains five important sections:
+	
+[skin]
+This section is edited by SkinMaker.  You shouldn't have to mess with this.
+	
+		
+[sonique colors]
+This section is the colors of Sonique in hex.    This section is also taken care of    in Skinmaker.
+
+[preferences]
+This is where Skinmaker saves its font settings.  I noticed that I preferred a smaller font to the one that Skinmaker uses as a default.  If you use the Prefrences menu item in Skinmaker, this is where it stores that data.  This is taken care of in Skinmaker
+			
+[misc locations]
+This is a list of all of the locations of the "pressed" buttons and the eq drawer in the misc.jpg file.  The unpressed buttons are all  in your jpgs of the modes.  The pressed versions of those buttons (the lit up ones) are stored in the misc.jpg file.   The locations are stored as one xy coordinate for each button.  This coordinate corosponds the the upper left corner of a bounding rectangle if one were to draw the smallest possible rectangle around the button mask.  You can actually get quite a lot of difference out of your own buttons by just keeping these values the default and putting your different buttons right on top of the ones that are there.  After playing with the misc.jpg file you will figure out how this works.
+			
+[misc values]
+This is a list of, you guessed it, miscellaneous values that just didn't go anywhere else.  Here you set size and placement of various animations and characteristics.  There is more information later in the document on this stuff.  If you don't screw with the size and placement of the eq drawer or knobs (you just change the color or texture) you won't have to mess with these values.
+		
+		
+Using these three files and Skinmaker and your favorite image editing program you can make a skin.  And here's how:
+
+
+-----------------------------
+STEP 1 :: The Concept Graphic
+-----------------------------
+
+First you need to generate the concept graphics of what you want your skin to look like.  There are some liberties and limitations to what you can do.
+
+---------
+Liberties
+---------  
+1) You can change the shape of the Nav Console, Mid-State Mode, and EQ drawer.
+
+2) You can change the shape and placement of all buttons.
+
+3) You can change the background bitmap in the screens
+
+4) You can change the animations of the knobs to make them sliders or whatever you want.
+
+5) You can change the color scheme of the screens.
+		
+-----------
+Liabilities
+-----------
+1) You cannot change anything inside of the screens except color scheme.
+
+2) Change the size of the screens AT YOUR OWN RISK.  It probably won't work.  For example, the nav icons (the blue round buttons for minimize, exit, etc) will always be in the same place.  So if you make a square screen for Mid State Mode, it will cut off the nav icons.  Plus the vis changing popup will be all screwed up.  It is a good idea to keep the screens the same size and shape that they are in the default.
+
+3) You can't change the shape of the Small State Mode.  Because of the small state drawers, the shape of this mode is pretty much static.  Changing anything about Small State Mode (except for the jpg) usually causes Small State Mode to be hosed.
+		
+With these in mind, create your skin graphics and then make jpegs of each of the modes.  Look at the examples given with the skin pack for a general idea (nc_*.jpg, msm_*.jpg, and littlemode_*.jpg).  All buttons should be in the un-lit state, the screens blank with the background that you want to appear.
+
+IMPORTANT THING TO KNOW: If you don't change something from the default skin, don't make another one. For example, if you didn't change the drawer at all, you don't need to make another mask for it.  You can change how it looks in the misc.jpg file, but if you didn't change the placement of the controls, just use the default.  Not only does this save you time but it makes the skin size smaller.
+
+Once you have made the jpgs, then you need to input them into Skinmaker.  Open up skinmaker and select "New" from the file menu.  Select a location.  You can call the .ini file whatever you want (usually the name of your skin).  Click "Save".  Then double click on the Source field for the Component that you want to set the image for.  For example, if I had just made my Nav Console jpg and I wanted to add it, I would double click on the Source filed next to "JPG::The Nav Console" and select the file.  Do this for all of the jpgs you have and then save your skin.
+		
+-------------------------
+STEP 2 :: The Mask Files	
+-------------------------
+
+After you have made the jpgs, you need to make a mask for each of your states.  Look at the files that come as an example with the skinpack.  The important things to know about these files are that 1) they need to be .bmp files and 2) they cannot be anti-aliased. Also, it is easier if you make the regions very different colors.  You will see that in the examples. And remember you don't have to remake things that don't change from the default.  The phantom sonique skin didn't need a drawer mask because everything stayed in the same place.
+
+Once you have made the masks, then you need to tell skinmaker where everything goes.  Selecting the mask is similar to selecting the jpg.  In Skinmaker, double click on the Source field next to the region that you want to define.  Obviously if you want to define a region in the Nav Console, open up the Nav Console mask.  Then you have one of two options for selecting your region: floodfill and colorkey.  Floodfill will select the region that you click on with a floodfill-like action.  Colorkey will select all areas with the same color as the pixel that you clicked on.  Invert will select the opposite of your selection.  Basically the only time you use colorkey or invert is to select "The Whole Nav Console", "The Whole msm", and "the small state mode (no drawer)".  You need to select ALL of the app in these cases, so you make your background a unique color, select that with colorkey, invert and you have your whole mode selected.  This would allow one to make a mode with transparent holes in it if one wanted to.
+
+Select regions for all of the regions in your masks.  Once you do this, you can do a test of your skin and see if what you have so far works. To do this, just click FILE, TEST and it will pop up sonique with the new skin on.  If everything looks keen, go on to the next step.
+
+-------------------------------------
+STEP 3 :: The Misc.jpg and Animations
+-------------------------------------
+
+Misc.jpg and refrences in the skin.ini:
+
+This is the most difficult part of the skin.  Once you have all of the graphics made, the most pain in the ass thing is tweaking the misc.jpg and mask locations so that the lit buttons line up with the original jpg.  The misc.jpg contains all of the lit states of the buttons.  Look at the example and you will understand.  There's a rundown of everything in the misc_default.jpg and their default xy coordinates in the misc.txt file that came right out of the Sonique source code.  All of the numbers here corrospond with the misc_default.jpg file.
+
+Most of the locations are pretty self explanatory, but there are a few that are fuzzy:
+
+redon : the nav button lit state for mid state mode
+orangeon: The open button lit state
+greenon: the shuffle button lit state
+cyanon: the loop button lit state for loop all
+greenon2: the loop button lit state for loop one
+cyanoff: the loop button transition color (this is a button state that is displayed between loop all and loop one as an animation transition.  So if your loop all button was red and your loop one button was blue, you would make this a purple color, or something that looks good).
+
+If you plan on changing the locations of any of the images in the misc.jpg then you have to put that in to the skin.ini file.  You would do that by entering in under the [misc locations] heading: 
+
+LOCATION_NAME_x=x_coordinate_value
+LOCATION_NAME_y=y_coordinate_value
+
+The [misc values] are handled pretty much the same way except for the fact that not all of them are coordinate values.  The data is entered in the same way if it is changed, only it is under the [misc values] instead (of course).
+
+Again, if you just change the colors, you won't have to bother with any of this stuff.
+
+
+Animations:
+
+The animations are really simple.  Just check the examples in the jpg directory (volknob, shuttle).  You set the size of the knob and the number of frames in the [misc values].  If you change it, just make the smallknob.jpg a grey color because the color is set in the [sonique colors] area.
+
+
+
+----------------------
+STEP 4 :: Finishing Up
+----------------------
+
+Once you have finished all of the JPG's and the mask stuff and the misc.jpg tweaking until the skin animations look right, then you need to change the color scheme so that it matches your skin.  This is pretty simple.  Just use skinmaker to do it.  The best way to figure out what the colors are is by trial and error.
+
+IMPORTANT NOTE!!!  Black (hex value 0x000000) is interpreted by Sonique as being Transparent.  So if you want something to be black, just use a really dark grey.  Use FILE, TEST to see how your color scheme looks.
+
+Now make a thumbnail.  Make sure that the thumbmask.jpg and the thumbnail.jpg match up (see the examples for inspiration) and pop them into Skinmaker.  Then fill out the fields in the top right of Skinmaker. 
+
+Author Name=Your name or handle
+
+Skin Name=The name of your skin 
+
+Contact Link=Public contact info, either home page or email - links out of Sonique skins tab. MUST be FULLY QUALIFIED address, E.G. http://www.myhomepage.com  -or- mailto: joe@home.com.
+
+Contact Desc=The name of your web page or your name or however you want to describe what your Contact link is, 
+
+Email=Your Email address (so that we can contact you if there is a problem with your skin - will NOT be sold or given out).
+
+Once you think everything is kosher, you are ready to submit your skin to the Sonique skins archive.  Click FILE, SUBMIT and follow the on screen instructions.  This will upload your compiled skin to the Sonique servers.  Once  there, we will examine and test your skin and then add it to the archive.  You will be notified if your skin is denied for some reason (as long as you remember to put your email address into the EMAIL field).
+
+Have Fun!
+
+
+
+-Pol
+
+pol@sonique.com

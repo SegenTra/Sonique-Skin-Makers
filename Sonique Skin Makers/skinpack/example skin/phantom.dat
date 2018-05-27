@@ -1,0 +1,59 @@
+# You can place a # character after the = to make this image or region be the
+# Sonique default.
+
+#main images
+/jpeg/shuttle           =       SHUTTLE.JPG
+/jpeg/navigator         =       nc_phantom.jpg
+/jpeg/extra             =       extrascreen.jpg
+/jpeg/smallstate        =       littlemode.jpg
+/jpeg/misc              =       Misc.jpg
+/jpeg/smallknob         =       smallknobs.jpg
+/jpeg/midsonique        =       msm_phantom.jpg
+/jpeg/volumeknob        =       Volknob.jpg
+
+#extra images
+/jpeg/skinthumb         =       skinthumb.jpg
+/jpeg/skinthumbmask     =       skinthumbmask.jpg
+
+#nav mode masks
+/rgn/nav/frame          =       MakeRegion ( ncmask_phantom.bmp, 230, 347, colorkey, invert )
+/rgn/nav/next           =       MakeRegion ( ncmask_phantom.bmp, 404, 180, floodfill )
+/rgn/nav/prev           =       MakeRegion ( ncmask_phantom.bmp, 370, 174, floodfill )
+/rgn/nav/play           =       MakeRegion ( ncmask_phantom.bmp, 388, 213, floodfill )
+/rgn/nav/pause          =       MakeRegion ( ncmask_phantom.bmp, 400, 244, floodfill )
+/rgn/nav/display        =       MakeRegion ( ncmask_phantom.bmp, 131, 104, floodfill )
+/rgn/nav/down           =       MakeRegion ( ncmask_phantom.bmp, 350, 267, floodfill )
+/rgn/nav/up             =       MakeRegion ( ncmask_phantom.bmp, 333, 243, floodfill )
+/rgn/nav/volume         =       MakeRegion ( ncmask_phantom.bmp, 397, 278, colorkey )
+/rgn/nav/eject          =       MakeRegion ( ncmask_phantom.bmp, 375, 102, floodfill )
+/rgn/nav/repeat         =       MakeRegion ( ncmask_phantom.bmp, 372, 123, floodfill )
+/rgn/nav/shuffle        =       MakeRegion ( ncmask_phantom.bmp, 372, 136, floodfill )
+/rgn/nav/drawer         = #
+/rgn/nav/drawertop      = #
+/rgn/nav/dknobamp       = #
+/rgn/nav/dknobbal       = #
+/rgn/nav/dknobpitch     = #
+
+#mid mode masks
+/rgn/mid/frame          =       MakeRegion ( msmmask_phantom.bmp, 156, 254, colorkey, invert )
+/rgn/mid/next           =       MakeRegion ( msmmask_phantom.bmp, 86, 276, floodfill )
+/rgn/mid/prev           =       MakeRegion ( msmmask_phantom.bmp, 19, 225, floodfill )
+/rgn/mid/bottom         =       MakeRegion ( msmmask_phantom.bmp, 81, 225, floodfill )
+/rgn/mid/eject          =       MakeRegion ( msmmask_phantom.bmp, 29, 115, floodfill )
+/rgn/mid/eq             =       MakeRegion ( msmmask_phantom.bmp, 28, 126, floodfill )
+/rgn/mid/pause          =       MakeRegion ( msmmask_phantom.bmp, 57, 270, floodfill )
+/rgn/mid/play           =       MakeRegion ( msmmask_phantom.bmp, 29, 248, floodfill )
+/rgn/mid/repeat         =       MakeRegion ( msmmask_phantom.bmp, 23, 142, floodfill )
+/rgn/mid/shuffle        =       MakeRegion ( msmmask_phantom.bmp, 28, 152, floodfill )
+/rgn/mid/shuttle        =       MakeRegion ( msmmask_phantom.bmp, 121, 133, floodfill )
+/rgn/mid/top            =       MakeRegion ( msmmask_phantom.bmp, 79, 68, floodfill )
+/rgn/mid/volume         =       MakeRegion ( msmmask_phantom.bmp, 157, 149, floodfill )
+/rgn/mid/songposring    =       MakeRegion ( msmmask_phantom.bmp, 114, 167, floodfill )
+/rgn/mid/listposring    =       MakeRegion ( msmmask_phantom.bmp, 130, 53, floodfill )
+
+#small mode masks
+/rgn/small/frame        =       MakeRegion ( smallmask.bmp, 1, 22, colorkey, invert )
+/rgn/small/extratop     =
+/rgn/small/extrabottom  =
+
+

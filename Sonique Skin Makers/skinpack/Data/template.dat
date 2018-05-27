@@ -1,0 +1,53 @@
+# You can place a # character after the = to make this image or region be the
+# Sonique default.
+
+#main images
+/jpeg/shuttle           =       
+/jpeg/navigator         =       
+/jpeg/extra             =       
+/jpeg/smallstate        =       
+/jpeg/misc              =       
+/jpeg/smallknob         =       
+/jpeg/midsonique        =       
+/jpeg/volumeknob        =       
+#extra images
+/jpeg/skinthumb         =       
+/jpeg/skinthumbmask     =       
+#nav mode masks
+/rgn/nav/frame          =       
+/rgn/nav/next           =       
+/rgn/nav/prev           =       
+/rgn/nav/play           =       
+/rgn/nav/pause          =       
+/rgn/nav/display        =       
+/rgn/nav/down           =       
+/rgn/nav/up             =       
+/rgn/nav/volume         =       
+/rgn/nav/eject          =       
+/rgn/nav/repeat         =       
+/rgn/nav/shuffle        =       
+/rgn/nav/drawer         = 
+/rgn/nav/drawertop      = 
+/rgn/nav/dknobamp       = 
+/rgn/nav/dknobbal       = 
+/rgn/nav/dknobpitch     = 
+#mid mode masks
+/rgn/mid/frame          =       
+/rgn/mid/next           =       
+/rgn/mid/prev           =       
+/rgn/mid/bottom         =       
+/rgn/mid/eject          =       
+/rgn/mid/eq             =       
+/rgn/mid/pause          =       
+/rgn/mid/play           =       
+/rgn/mid/repeat         =       
+/rgn/mid/shuffle        =       
+/rgn/mid/shuttle        =       
+/rgn/mid/top            =       
+/rgn/mid/volume         =
+/rgn/mid/listposring    =
+/rgn/mid/songposring    =
+#small mode masks
+/rgn/small/frame        =       
+/rgn/small/extratop     =       
+/rgn/small/extrabottom  =       

@@ -1,0 +1,58 @@
+# You can place a # character after the = to make this image or region be the
+# Sonique default.
+
+#main images
+/jpeg/shuttle           =       SHUTTLE.JPG
+/jpeg/navigator         =       nc_phantom.jpg
+/jpeg/extra             =       extrascreen.jpg
+/jpeg/smallstate        =       littlemode.jpg
+/jpeg/misc              =       Misc.jpg
+/jpeg/smallknob         =       smallknobs.jpg
+/jpeg/midsonique        =       msm_phantom.jpg
+/jpeg/volumeknob        =       Volknob.jpg
+
+#extra images
+/jpeg/skinthumb         =       skinthumb.jpg
+/jpeg/skinthumbmask     =       skinthumbmask.jpg
+
+#nav mode masks
+/rgn/nav/frame          =       MakeRegion ( ncmask_phantom.bmp, 230, 347, colorkey, invert )
+/rgn/nav/next           =       MakeRegion ( ncmask_phantom.bmp, 404, 180, floodfill )
+/rgn/nav/prev           =       MakeRegion ( ncmask_phantom.bmp, 370, 174, floodfill )
+/rgn/nav/play           =       MakeRegion ( ncmask_phantom.bmp, 388, 213, floodfill )
+/rgn/nav/pause          =       MakeRegion ( ncmask_phantom.bmp, 400, 244, floodfill )
+/rgn/nav/display        =       MakeRegion ( ncmask_phantom.bmp, 131, 104, floodfill )
+/rgn/nav/down           =       MakeRegion ( ncmask_phantom.bmp, 350, 267, floodfill )
+/rgn/nav/up             =       MakeRegion ( ncmask_phantom.bmp, 333, 243, floodfill )
+/rgn/nav/volume         =       MakeRegion ( ncmask_phantom.bmp, 397, 278, colorkey )
+/rgn/nav/eject          =       MakeRegion ( ncmask_phantom.bmp, 375, 102, floodfill )
+/rgn/nav/repeat         =       MakeRegion ( ncmask_phantom.bmp, 372, 123, floodfill )
+/rgn/nav/shuffle        =       MakeRegion ( ncmask_phantom.bmp, 372, 136, floodfill )
+/rgn/nav/drawer         =#
+/rgn/nav/drawertop      =#
+/rgn/nav/dknobamp       =#
+/rgn/nav/dknobbal       =#
+/rgn/nav/dknobpitch     =#
+
+#mid mode masks
+/rgn/mid/frame          =
+/rgn/mid/next           =
+/rgn/mid/prev           =
+/rgn/mid/bottom         =
+/rgn/mid/eject          =
+/rgn/mid/eq             =
+/rgn/mid/pause          =
+/rgn/mid/play           =
+/rgn/mid/repeat         =
+/rgn/mid/shuffle        =
+/rgn/mid/shuttle        =
+/rgn/mid/top            =
+/rgn/mid/volume         =
+/rgn/mid/songposring    =
+/rgn/mid/listposring    =
+
+#small mode masks
+/rgn/small/frame        =
+/rgn/small/extratop     =
+/rgn/small/extrabottom  =
+

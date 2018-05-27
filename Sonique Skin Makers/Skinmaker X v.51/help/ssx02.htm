@@ -1,0 +1,188 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Sonique Skinmaker X Help System - Introduction to the process of making a skin</title>
+	</head>
+
+	<body bgcolor="black" text="white" link="aqua" vlink="aqua" alink="aqua">
+		<img src="../images/ssxlogo.jpg" alt="ssxlogo.jpg" width="287" height="77">
+		<p><font face="Verdana" size="2"><strong>SONIQUE SKINMAKER X HELP SYSTEM</strong> - </font><font color="yellow" face="Verdana" size="2"><strong>INTRODUCTION TO THE PROCESS OF MAKING A SKIN</strong></font></p>
+		<p><font face="Verdana" size="2"><br>
+		</font></p>
+		<p><font face="Verdana" size="2">
+		<table border="0" width="575">
+			<tr>
+				<td><font color="aqua" size="2" face="Verdana"><strong>INTRODUCTION</strong></font><font face="Verdana" size="2"><br>
+					<br>
+					This document is somewhat based on the &quot;How to Make Skins&quot; file which is included in the standard Skinpack. This version is re-arranged and has images describing some of the steps.<br>
+					<br>
+					First of all, probably the best way of learning is to look at what others have done. SSX has that ability and you can easily load Sonique skins. If you want to test the program, at least one skin is provided in your [sonique path]\skins\examples directory.<br>
+					<br>
+					As you must have figured out, most of the work done when creating a skin is done with image editing applications such as Adobe Photoshop (Which we strongly recommend). SSX is merely a tool to transform your images into a Sonique skin.<br>
+					<br>
+					<b>So what do I do?</b><br>
+					If you are to create a full-fledged 1.x Sonique skin you need to design the following:<br>
+					<br>
+					<b>- The Nav Console Mode with all buttons &amp; knobs </b><br>
+					<br>
+					<table>
+						<tr>
+							<td><img src="../images/ssxnc.jpg" align="left" width="215" height="180"></td>
+							<td>
+								<ul>
+									<li><font face="Verdana" size="2">play/stop</font>
+									<li><font face="Verdana" size="2">pause</font>
+									<li><font face="Verdana" size="2">previous/next</font>
+									<li><font face="Verdana" size="2">load</font>
+									<li><font face="Verdana" size="2">shuffle</font>
+									<li><font face="Verdana" size="2">repeat</font>
+									<li><font face="Verdana" size="2">volume</font>
+									<li><font face="Verdana" size="2">PgUp/PgDn</font>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					</font>
+					<p><font face="Verdana" size="2"><br>
+					<b>- The Equalization/Audio control along with the sliders and three knobs</b></font></p>
+					<p><font face="Verdana" size="2">
+					<table>
+						<tr>
+							<td><img src="../images/ssxeq.jpg" align="left" width="385" height="150"></td>
+							<td>
+								<ul>
+									<li><font face="Verdana" size="2">equalizer band sliders</font>
+									<li><font face="Verdana" size="2">amplification knob</font>
+									<li><font face="Verdana" size="2">balance knob</font>
+									<li><font face="Verdana" size="2">pitch knob</font>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					</font>
+					<p><font face="Verdana" size="2"><br>
+					<b>- The Middle State Mode with all buttons, song/playlist position rings and knobs</b><br>
+					</font></p>
+					<p><font face="Verdana" size="2">
+					<table>
+						<tr>
+							<td><br>
+								<img src="../images/ssxmsm.jpg" align="left" width="91" height="151"></td>
+							<td>
+								<ul>
+									<li><font face="Verdana" size="2">play/stop</font>
+									<li><font face="Verdana" size="2">pause</font>
+									<li><font face="Verdana" size="2">previous/next</font>
+									<li><font face="Verdana" size="2">load</font>
+									<li><font face="Verdana" size="2">shuffle</font>
+									<li><font face="Verdana" size="2">repeat</font>
+									<li><font face="Verdana" size="2">volume</font>
+									<li><font face="Verdana" size="2">Jog Wheel</font>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					</font>
+					<p><font face="Verdana" size="2"><br>
+					<b>- The Small State Mode (not really any user defined buttons here)</b><br>
+					</font></p>
+					<p><font face="Verdana" size="2">
+					<table>
+						<tr>
+							<td><br>
+								<img src="../images/ssxssm.jpg" align="left" width="206" height="78"></td>
+							<td></td>
+						</tr>
+					</table>
+					</font>
+					<p><font face="Verdana" size="2"><br>
+					<br>
+					In all modes, you can choose to not include certain parts and that's up to you. There are also more areas in development - one of the new ones is the Link area on both the MSM and NAV mode.<br>
+					<br>
+					</font><font color="aqua" size="2" face="Verdana"><strong>THE SKIN FILE FORMAT</strong></font><font face="Verdana" size="2"><br>
+					<br>
+					The format of the Sonique skin file (*.sgf = Sonique Graphics File) is that of an archive - pretty much like a zip file. A SGF file is also like a directory. The files are arranged inside the file like files in a normal directory. (Another name of this format is DAF = Data Archive Format)<br>
+					The following files are stored in a skin-file:<br>
+					<br>
+					</font></p>
+					<ul>
+						<li><font face="Verdana" size="2">The skin.ini - a file that contains values like information about the author, positions of buttons within the images (in addition to regions, see below).</font>
+						<li><font face="Verdana" size="2">JPEG images for each of the states plus three knob animations and one misc image where lit-states of buttons and the EQ drawer is stored.</font>
+						<li><font face="Verdana" size="2">Several RGN files (regions)<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						</font><font color="aqua" size="2" face="Verdana"><strong>REGIONS</strong></font><font face="Verdana" size="2"><br>
+						<br>
+						As you can see when running Sonique with different skins it's possible to do almost any design, at least in the MSM. This is achieved using <b>regions</b>.<br>
+						<br>
+						A region is an area pretty much like a drawn image in Adobe Photoshop and can also be referred to as an array of pixels. It consists of X number of 1x1 pixel squares which together builds a &quot;region&quot;. Sonique uses these regions to define where buttons are positioned and the shape of the windows in the different modes.<br>
+						<br>
+						1.<img src="../images/ssxrgn0.jpg" width="91" height="91"> 2.<img src="../images/ssxrgn1.jpg" width="91" height="91"> 3.<img src="../images/ssxrgn2.jpg" width="91" height="91"><br>
+						<br>
+						This is the standard way of creating a region. 1# is a blowup of an image. In 2# the red pixels together form a region that is overlayed on top of the image. In 3# the result is shown (ie. the part of the original image that was covered by the region).<br>
+						<br>
+						In SSX (and the old skinmaker) the regions are created by providing a 16 color BMP bitmap and then searching for pixels with a specific color that either  A) are contiguous (floodfill) or B) of the same color value but possibly broken up into different places (colorkey). Those bitmaps are called masks. Below is an example of what a mask can look like.  A<br>
+						<br>
+						MASK<img src="../images/ssxmask1.gif" width="177" height="291">TEXTURE<img src="../images/ssxmask3.jpg" width="177" height="291">COMBINED<img src="../images/ssxmask2.jpg" width="177" height="291"><br>
+						Another good source to understand and improve the use of regions is Zeroidea's skin tutorial located at <a href="http://skins.sonique.com">skins.sonique.com</a>. (Select Developers area)<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						</font><font color="aqua" size="2" face="Verdana"><strong>THE SKIN.INI</strong></font><font face="Verdana" size="2"><br>
+						<br>
+						As a general rule, while using SSX, see the INI file comments for details. However dealing with it is still quite difficult if you aren't used to it. Especially when it comes to the misc.jpg. The standard misc.jpg looks like this:<br>
+						<br>
+						<img src="../images/ssxmisc.jpg" width="359" height="201"><br>
+						<br>
+						<br>
+						Once you have all of the graphics made, the most pain in the ass thing is tweaking the misc.jpg and mask locations so that the lit buttons line up with the original jpg. The misc.jpg contains all of the lit states of the buttons (what the buttons look like when they are pressed). Look at the example and you will understand. There's a rundown of everything in the misc_default.jpg and their default xy coordinates in the misc.txt file that came right out of the Sonique source code. All of the numbers here correspond with the misc_default.jpg file. Most of the locations are pretty self explanatory, but there are a few that are fuzzy:<br>
+						<br>
+						</font>
+						<li><font face="Verdana" size="2">redon : the nav button lit state for mid state mode<br>
+						</font>
+						<li><font face="Verdana" size="2">orangeon: The open button lit state<br>
+						</font>
+						<li><font face="Verdana" size="2">greenon: the shuffle button lit state<br>
+						</font>
+						<li><font face="Verdana" size="2">cyanon: the loop button lit state for loop all<br>
+						</font>
+						<li><font face="Verdana" size="2">greenon2: the loop button lit state for loop one<br>
+						</font>
+						<li><font face="Verdana" size="2">cyanoff: the loop button transition color (this is a button state that is displayed between loop all and loop one as an animation transition. So if your loop all button was red and your loop one button was blue, you would make this a purple color, or something that looks good).<br>
+						<br>
+						If you plan on changing the locations of any of the images in the misc.jpg then you have to put that in to the skin.ini file. You would do that by entering in under the [misc locations] heading:<br>
+						<br>
+						LOCATION_NAME_x=x_coordinate_value<br>
+						LOCATION_NAME_y=y_coordinate_value<br>
+						<br>
+						The [misc values] are handled pretty much the same way as the locations except for the fact that not all of them are coordinate values. The data is entered in the same way if it is changed, only it is under the [misc values] area instead (of course).<br>
+						<br>
+						Animations:<br>
+						<br>
+						The animations are really simple. Just check the examples in the jpg directory (volknob, shuttle). You set the size of the knob and the number of frames in the [misc values]. If you change it, just make the smallknob.jpg a grey color because the color is set in the [sonique colors] area.<br>
+						<br>
+						<br>
+						</font>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		</font>
+		<p><a href="ssx00.htm"><font face="Verdana" size="2">ADDITIONAL HELP TOPICS</font></a><font face="Verdana" size="2"><br>
+		<br>
+		<br>
+		<br>
+		Need more help? Questions should be sent to <a href="mailto:ssxsupport@sonique.com">ssxsupport@sonique.com</a>.<br>
+		Get the latest version of Sonique if you don't already have it: <a href="http://www.sonique.com">www.sonique.com</a></font></p>
+		<p><font size="1" face="Verdana">Sonique Copyright &copy; 1998-99 Mediascience, Inc.<br>
+		Sonique Skinmaker X Copyright &copy; 1999 Vovoid Software &amp; Multimedia::DUAL JW</font>
+	</body>
+
+</html>
