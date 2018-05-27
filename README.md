@@ -1,4 +1,8 @@
-The skinpack.zip file is the official untouched
+Please use this link - https://github.com/SegenTra/Sonique-Skin-Makers/archive/master.zip - to download
+
+----------------------------------------------------
+
+The skinpack file is the official untouched
 stand alone Skinmaker Classic for the Sonique media player.
 
 ----------------------------------------------------
@@ -9,6 +13,6 @@ installer for the Sonique media player.
 ----------------------------------------------------
 
 If the ssx051.exe file does not work, please use the
-Skinmaker X v.51.zip to find the unpacked files and
+Skinmaker X v.51 to find the unpacked files and
 move theme to directory where you have installed
 Sonique media player.
