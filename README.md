@@ -14,5 +14,5 @@ installer for the Sonique media player.
 
 If the ssx051.exe file does not work, please use the
 Skinmaker X v.51 to find the unpacked files and
-move theme to directory where you have installed
+move theme to the directory where you have installed
 Sonique media player.
