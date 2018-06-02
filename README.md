@@ -1,4 +1,4 @@
-Please use this link - https://github.com/SegenTra/Sonique-Skin-Makers/archive/master.zip - to download
+Please use this link - https://github.com/SegenTra/Sonique-Skin-Makers/releases - to download
 
 ----------------------------------------------------
 
